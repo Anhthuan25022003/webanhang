@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <input type="text " id="txt1" value="1 ">
+    <input type="text " id="txt2" value="2">
+    <input type="button" value="Tổng" id="btok">
+    
+    <script type="text/javascript">
+       
+        function Tong(){
+            a = parseInt (document.getElementById('txt1').value);
+            b = parseInt (document.getElementById('txt2').value);
+            return a+b;
+        }
+        document.getElementById('btok').addEventListener("click", function()  { alert(Tong())},false);
+    </script>
+</body>
+</html>

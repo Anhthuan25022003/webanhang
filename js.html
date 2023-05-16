@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        a=prompt("Nhap a");
+        b=prompt("Nhap b");
+    document.writeln("Trước a++ là:"+(a)+"</br>");
+    document.writeln(" a++ là:"+(a++)+"</br>");
+    document.writeln("Sau a++ là:"+(a)+"</br>");
+
+    document.writeln("Trước ++a là:"+(a)+"</br>");
+    document.writeln("++a là:"+(++a)+"</br>");
+    document.writeln("Sau ++a là:"+(a)+"</br>");
+
+    document.writeln("Trước a-- là:"+(a)+"</br>");
+    document.writeln("a-- là:"+(a--)+"</br>");
+    document.writeln("Sau a-- là:"+(a)+"</br>");
+    
+    document.writeln("Trước --a là:"+(a)+"</br>");
+    document.writeln(" --alà:"+(--a)+"</br>");
+    document.writeln("Sau --a là:"+(a)+"</br>");
+
+        if(a>b)
+            document.writeln("a lớn hon b"+"</br>");
+        
+        else
+            document.writeln("b lon hon a"+"</br>");
+        
+        if(a%2==0)  
+            document.writeln("a la so chan"+"</br>");
+        else
+            document.writeln("a la so le"+"</br>");
+        if(b%2==0)  
+            document.writeln("b la so chan"+"</br>");
+        else
+            document.writeln("b la so le"+"</br>");
+
+
+        switch(a){
+            case 1:
+                document.wrieln("thang 1"+"</br>");     
+        
+            case 2:
+                document.writeln("thang 2"+"</br>");
+            case 3:
+                document.writeln("thang 3"+"</br>");
+            case 4:
+                document.writeln("thang 3"+"</br>");
+            case 5:
+                document.writeln("thang 4"+"</br>");
+             case 6:
+                document.writeln("thang 5"+"</br>");
+             case 7:
+                document.writeln("thang 6"+"</br>");
+             case 8:
+                document.writeln("thang 7"+"</br>");
+    }
+                document.writeln("</br>");
+    switch(b){
+            case 1:
+                document.wrieln("thang 1"+"</br>");   break;  
+        
+            case 2:
+                document.writeln("thang 2"+"</br>");  break;
+            case 3:
+                document.writeln("thang 3"+"</br>");  break;
+            case 4:
+                document.writeln("thang 3"+"</br>");  break;
+            case 5:
+                document.writeln("thang 4"+"</br>");  break;
+             case 6:
+                document.writeln("thang 5"+"</br>");  break;
+             case 7:
+                document.writeln("thang 6"+"</br>");  break;
+             case 8:
+                document.writeln("thang 7"+"</br>");  break;
+    }
+
+    for( i=0;i<a;i++){
+        document.writeln("Gia tri cua i tu 1 den a la "+(i+1)+"<br/>");
+    }
+    document.writeln("</br>");
+
+    for( i=0;i<b;i++){
+        document.writeln("Gia tri cua i tu 1 den b la "+(i+1)+"</br>");
+    }
+
+    document.writeln("</br>");
+    i=0;
+    while( i<b){
+        document.writeln("Gia tri cua i tu 1 den b la "+(i+1)+"</br>");
+        i++;
+    }
+
+    var c=5,d=4;
+    function Tong(c,d){
+        s=c+d;
+        return s;
+    }
+    function Hieu(c,d){
+        return c-d;
+    }
+    function hienThi(c,d,p){
+        if(p==1){
+            document.writeln("c+d= "+Tong(c,d)+"</br>");
+        }
+        if(p==2) {
+            document.writeln("c-d= "+Hieu(c,d)+"</br>");
+        }
+    }
+    hienThi(c,d,1);
+
+    hienThi(c,d,2);
+
+
+    //ham an danh
+    var f=function(m,n){
+        return m+n;
+    }(10,11);
+    document.writeln("m+n= "+f+"</br>");
+
+    document.writeln("m-n "+function(m,n){
+        return m-n;
+    }(4,5)+"</br>");
+    
+   
+    
+    
+    </script>
+
+</body>
+
+</html>

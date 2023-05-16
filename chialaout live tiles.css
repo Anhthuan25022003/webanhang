@@ -1,0 +1,44 @@
+#container{
+    margin: 0px auto;
+    background-color: white;
+}
+#phan0{
+    height: 150px;
+    background-color: rgb(52, 52, 110);
+    
+    
+}
+#phan1{
+    height: 150px;
+    
+    
+    
+}
+#phan11{
+    height: 150px;width: 33%;float: left;
+    
+   
+}
+#phan111{
+    height: 150px;width: 45%; background-color: rgb(180, 119, 43); float: left;margin-right: 20px;
+}
+#phan112{
+    height: 150px;width: 45%; background-color: rgb(26, 173, 26);float: left;
+}
+#phan12{
+    height: 150px;width: 33%; background-color: rgb(173, 26, 58);float: left;
+}
+#phan13{
+    height: 150px;width: 33%; float: right;background-color: aqua;
+}
+#phan2{
+    height: 150px;
+    
+    background-color: rgb(146, 34, 96);
+    margin-top: 100px;
+}
+#phan3{
+    height: 150px;
+    margin-top: 15px;
+    background-color: rgb(194, 25, 95);
+}

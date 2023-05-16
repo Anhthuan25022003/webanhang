@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dongho">
+
+    </div>
+    <style>
+        div{
+            background-color: #3cc;
+            width: 200px;
+            padding: 5px;
+            font-size: 38pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <script type="text/javascript">
+        function laythoigian(){
+            var d=new Date();
+            return d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+        }
+        function capnhatthoigian(){
+            document.getElementById('dongho').innerHTML=laythoigian();
+            window.setTimeout('capnhathoigian()',1);
+        }
+        capnhatthoigian();
+    </script>
+</body > 
+</html>

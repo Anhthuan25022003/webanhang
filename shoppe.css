@@ -1,0 +1,152 @@
+#container{
+    margin:0px auto;
+}
+#box1{
+    height: 120px;
+     background: rgb(195,96,34);
+    background: linear-gradient(0deg, rgb(34, 195, 96) 0%, rgba(253,55,45,1) 100%);;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    display: block;
+}
+
+.box1bentrai__navar{
+    display: flex;
+    justify-content:space-between;
+}
+.box1bentrai__navar--list{
+    padding: 0px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 4px;
+}
+#box1 li{
+    list-style-type: none;
+    
+    
+    
+}
+.box1__bentrai-item{
+    margin: 0 8px;
+    position: relative;
+}
+.box1__bentrai-item,.box1bentrai__navar--item--link{
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight:100;
+    
+}
+.box1bentrai__navar--item--bold{
+    font-weight: 600;
+}
+.box1__bentrai-item--phancach::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 18px;
+    border-left: 3px solid rgb(227, 144, 168);
+    right: -12px;
+    top: 50%;
+    transform:  translateY(-50%) ;
+    
+}
+.box1__bentrai-item:hover,.box1bentrai__navar--item--link:hover  {
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}
+.box1__bentrai-item--icon{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.box1bentrai__navar--icon{
+    font-size: 18px;
+    margin: 0 4px;
+}
+.chukhongnoi{
+    cursor: text;
+    color: white;
+}
+
+.logotimkiem{
+    width: 162px;
+    height: 50px;
+    
+}
+.thanhtimkiem{
+    flex: 1;
+    height: 35px;
+    background-color: #fff;
+    margin: 0 200px;
+    
+    
+}
+.chutimkiem{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding:0 8px;
+    
+}
+.iddangnhap,.iddangki{
+    text-decoration: none;
+    color: #fff;
+}
+#box2{
+    height: 380px;
+    width: 1420px;
+    background-image: url("anhnenbox2.png");
+    margin: 50px;
+    font-size: 50px;
+    border-radius: 20px;
+}
+
+.chu7mau{
+    
+    padding: 300px 70px 70px 0px;
+    text-align: center;
+    font-weight: 900;
+    
+}
+.danhmuc{
+    font-size: 50px;
+}
+#box3{
+    height: 915px;
+    
+    margin: 20px 0;
+    
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(241, 12, 161);
+}
+#box4{
+    height: 50px;
+    background-color:rgba(217, 14, 14, 0.1);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.box31,.box32,.box33,.box34,.box35,.box36,.box37,.box38,.box39,.box310,.box311,.box312{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,0.6674019949776786) 0%, rgba(148,153,233,0.41530115464154416) 100%);
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin: 0 20px 10px 0;
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+    border-radius: 60px/50px;
+    
+}
+.link{
+    text-decoration: none;
+    color: rgb(25, 226, 18);
+}
+

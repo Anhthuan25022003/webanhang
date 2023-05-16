@@ -1,0 +1,104 @@
+#container{
+    margin:0px auto;
+}
+#box1{
+    height: 120px;
+     background: rgb(195,96,34);
+    background: linear-gradient(0deg, rgb(34, 195, 96) 0%, rgba(253,55,45,1) 100%);;
+    padding: 0px;
+    position: sticky;
+    top: 0;
+    display: block;
+}
+
+.box1bentrai__navar{
+    display: flex;
+    justify-content:space-between;
+}
+.box1bentrai__navar--list{
+    padding: 0px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 4px;
+}
+#box1 li{
+    list-style-type: none;
+    
+    
+    
+}
+.box1__bentrai-item{
+    margin: 0 8px;
+    position: relative;
+}
+.box1__bentrai-item,.box1bentrai__navar--item--link{
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight:100;
+    
+}
+.box1bentrai__navar--item--bold{
+    font-weight: 600;
+}
+.box1__bentrai-item--phancach::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 18px;
+    border-left: 3px solid rgb(227, 144, 168);
+    right: -12px;
+    top: 50%;
+    transform:  translateY(-50%) ;
+    
+}
+.box1__bentrai-item:hover,.box1bentrai__navar--item--link:hover  {
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+}
+.box1__bentrai-item--icon{
+    color: var(--white-color);
+    text-decoration: none;
+}
+.box1bentrai__navar--icon{
+    font-size: 18px;
+    margin: 0 4px;
+}
+.chukhongnoi{
+    cursor: text;
+    color: white;
+}
+
+.logotimkiem{
+    width: 162px;
+    height: 50px;
+    
+}
+.thanhtimkiem{
+    flex: 1;
+    height: 35px;
+    background-color: #fff;
+    margin: 20px 200px;
+    
+    
+}
+.chutimkiem{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding:0 8px;
+    
+}
+.trangchu{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-weight: 200;
+}
+.iddangnhap,.iddangki{
+    text-decoration: none;
+    color: #fff;
+}

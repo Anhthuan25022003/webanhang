@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script type="text/javascript">
+       
+        function ChuHoa(s){
+            
+            return s.toUpperCase();
+        }
+        function ChuThuong(s){
+        
+            return s.toLowerCase();
+        }
+        function ChuanHoa(s){
+            s=s.toLowerCase();
+            xau="";
+            for(i=0;i<s.length;i++){
+                if(i==0){
+                    xau+=s.substr(i,1).toUpperCase();
+                }
+                else if(s.substr(i-1,1)==' '&& i<s.length){
+                    xau+=s.substr(i,1).toUpperCase();
+                }
+                else{
+                    xau+=s.substr(i,1); 
+                }
+            }
+            return xau;
+        }
+        xau=prompt("Nhâp Xau S: ");
+        document.writeln("Xâu Hoa Là: "+ChuHoa(xau) + "<br/>");
+        document.writeln("Xâu Thường Là: "+ChuThuong(xau) + "<br/>");
+        document.writeln("Xâu Chuẩn Hóa Là: "+ChuanHoa(xau) + "<br/>");
+    </script>
+</body>
+</html>

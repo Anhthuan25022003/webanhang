@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script type="text/javascript">
+       
+        function TongBP(n){
+            S=0;
+            for( i=1;i<=n;i++){
+                S+=i*i;
+            }
+            return S;
+        }
+        function TongLe(n){
+            S=0;
+            for(i=1;i<=n;i++){
+                if(i%2!=0){
+                    S+=i;
+                }
+            }
+            return S;
+        }
+        n=prompt("Nhâp giá Trị n: ");
+        document.writeln("Giá Trị Của n Là: "+n + "<br/>");
+        document.writeln("Tổng Bình Phương Là: "+TongBP(n) + "<br/>");
+        document.writeln("Tổng Các Số Lẻ Là: "+TongLe(n) + "<br/>");
+        document.writeln("---------------------------------------------"+"<br/>");
+
+        function ChuHoa(s){
+            
+            return s.toUpperCase();
+        }
+        function ChuThuong(s){
+        
+            return s.toLowerCase();
+        }
+        function ChuanHoa(s){
+            s=s.toLowerCase();
+            xau="";
+            for(i=0;i<s.length;i++){
+                if(i==0){
+                    xau+=s.substr(i,1).toUpperCase();
+                }
+                else if(s.substr(i-1,1)==' '&& i<s.length){
+                    xau+=s.substr(i,1).toUpperCase();
+                }
+                else{
+                    xau+=s.substr(i,1); 
+                }
+            }
+            return xau;
+        }
+        xau=prompt("Nhâp Xau S: ");
+        document.writeln("Xâu Hoa Là: "+ChuHoa(xau) + "<br/>");
+        document.writeln("Xâu Thường Là: "+ChuThuong(xau) + "<br/>");
+        document.writeln("Xâu Chuẩn Hóa Là: "+ChuanHoa(xau) + "<br/>");
+        document.writeln("---------------------------------------------"+"<br/>");
+
+        try{
+            callMe();
+        }catch(err){
+            document.writeln(err+ ". Chuong Trinh Bi Loi Khong Thuc Hien Duoc !"+"<br/>");
+        }
+        document.writeln("---------------------------------------------"+"<br/>");
+
+        st=prompt("nhap st");
+        p=prompt ("nhap p");
+        function BP(x){
+            try{
+                _x=parseInt(x);
+                if(isNaN(_x)){
+                    throw("Khong The Chuyen Doi <b>"+x+"</b> Thanh So <br/>");
+                }
+                else{
+                    document.writeln(x+"^2="+_x*_x+"<br/>");
+                }
+            }catch(err){
+                document.writeln(err+"<br/>");
+            }
+        }
+        BP(st);
+        BP(p);
+        document.writeln("---------------------------------------------"+"<br/>");
+
+        var ds= new Array("Thuan","Si","Le","Anh");
+        for(i=0;i<ds.length;i++){
+            document.writeln(ds[i]+ "<br/>");
+        }
+        document.writeln("-----"+"<br/>")
+        var obj= new Array("Tom","Muc",12,new Date());
+        for(i=0;i<obj.length;i++){
+            document.writeln(obj[i]+"<br/>");
+            
+        }
+        document.writeln("---------------------------------------------"+"<br/>");
+
+        var title=new Array("Ho Va Ten","Tuoi","Diem Trung Binh");
+        var ds=new Array (  new Array("Le Si Thuan",19,9.2),
+                            new Array("Pham Van Anh",20,8.0),
+                            new Array("Ho Van Y",25,5.0),
+                            new Array("Phan Van Duc",19,9.2)
+                        );
+        function inTT(sv){
+            document.writeln(
+               " <div style='width:130px;float:left;'>"+sv[0] +"</div>"+" <div style='width:50px;float:left;text-align:center;'>"+sv[1] +"</div>"+" <div style='width:150px;float:left;text-align:center;'>"+sv[2] +"</div>"+"<br style='clear:both;'/>");
+            
+        }
+        function inTB(){
+            document.writeln("<b>");
+            inTT(title);
+            document.writeln("</b>");
+            for(i=0;i<ds.length;i++){
+                inTT(ds[i]);
+            }
+        }
+        inTB();
+    </script>
+    <style>
+        body{
+            background: rgb(227,23,44);
+background: linear-gradient(90deg, rgba(227,23,44,1) 0%, rgba(49,236,14,1) 6%, rgba(7,83,28,1) 24%, rgba(9,121,25,1) 35%, rgba(8,120,135,1) 45%, rgba(155,7,72,1) 54%, rgba(0,212,255,1) 100%);7
+lst
+l
+        }
+    </style>
+</body>
+</html>

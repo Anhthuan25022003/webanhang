@@ -1,0 +1,44 @@
+body{
+    margin: 0px auto;
+}
+#container{
+    width: 330px;
+}
+#box1,#box2,#box3,#box4,#box5{
+    width: 130px;
+    height: 97px;
+    background-image: url("anh1.jpg");
+    background-repeat: no-repeat;
+    margin: 8px;
+    
+    
+    
+
+}
+#box1{
+    width: 260px !important;
+    height: 194px!important;
+    
+}
+#box2{
+    background-position: 0% 0%;
+    float: left ;
+    
+
+}
+#box3{
+    background-position: 100% 0%;
+    float: left ;
+    
+}
+#box4{
+    background-position: 0% 100%;
+    float: left;
+}
+
+#box5{
+    background-position: 100% 100%;
+    
+    float: left;
+   
+}

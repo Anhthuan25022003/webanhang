@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content" content="text/html charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <input type="text" id="txtemail">
+    <input type="password" id="txtpass">
+    <input type="text" id="txthoten">
+    <input type="button" id="nutbam" value="Đăng Kí">
+    <style> input{display: list-item;}</style>
+
+    <script type="text/javascript">
+        function  validemail(email){
+            p1=email.split("@");
+            if(p1[0].length<=0){
+                return false;
+            }
+            p2=p1[1].split(".");
+            if(p2.length<2)
+                return false;
+            return true;
+        }
+        function validpassword(password){
+            return password.length>=8?true:false;
+
+
+        }
+        function validhoten(hoten){
+            return hoten.split(" ").length>=2?true:false;
+        }
+        document.getElementById('nutbam').onclick=function(){
+            var email= document.getElementById('txtemail').value;
+            var password= document.getElementById('txtpass').value;
+            var email= document.getElementById('txthoten').value;
+            if(validemail(email)&& validpassword(password)&& validhoten(hoten)){
+                alert("Dữ Liệu Nhập Vào Đúng");
+            }
+            else{
+                alert("Vui Lòng Kiểm Tra Lại Dữ Liệu!");
+            }
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+    background-image: url("thuan1.jfif");
+    background-repeat: repeat;
+}
+#box1,#box2,#box3,#box4,#box5,#box6{
+    height: 200px;
+    width: 200px;
+    margin-right:-100px;
+    padding: 10px;
+    float: left;
+}
+
+#box1{
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+#box2{
+    background: rgb(0,40,236);
+    background: linear-gradient(6deg, rgba(0,40,236,1) 0%, rgba(163,233,148,1) 100%);
+    margin-top: 100px;
+}
+#box3{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+#box4{
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);    margin-top: 100px;
+}
+#box5{
+    background: rgb(2,0,36);
+    background: linear-gradient(118deg, rgba(2,0,36,1) 0%, rgba(235,51,10,0.9051995798319328) 26%, rgba(199,23,165,1) 74%, rgba(56,189,29,0.01724439775910369) 100%);
+
+}
+#box6{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(235,221,10,1) 26%, rgba(114,199,23,1) 74%, rgba(56,189,29,0.01724439775910369) 100%);
+    margin-top: 100px;
+}

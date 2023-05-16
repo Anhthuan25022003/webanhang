@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html charset= UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="h" style="text-align: center;cursor: pointer;background-color: rgb(95, 175, 89);">DANH MUC HANG</div>
+        <ul>
+            <li><a style="text-decoration: none;"href="#">LapTop</a></li>
+            <li><a style="text-decoration: none; "href="#">SmartPhone</a></li>
+            <li><a style="text-decoration: none; "href="#">Tablet</a></li>
+            <li><a style="text-decoration: none;"href="#">Phụ Kiện</a></li>
+        </ul>
+    </div>
+    <style>
+        #menu{
+            background-color: black;color: white;
+            width: 150px;
+            height: 120px;
+            padding: 0px 0px;
+            overflow: hidden;
+            -webkit-user-select:none ;
+            font-family:'Times New Roman', Times, serif;
+            
+
+        }
+        li{list-style: none;} ul{padding-left:15px ;margin-top: 5px;} 
+        a:link ,a:visited{color:yellow;},a:hover{color: red;}
+    </style>
+    <script type="text/javascript">
+        var h="auto";
+        function ThayDoi(id){
+            var div=document.getElementById(id);
+            if(h=="auto"){
+                div.style.height="19px";
+                h="19px";
+            }
+            else if(h=="19"){
+                div.style.height="auto";
+                h="auto";
+        }}
+        document.getElementById('h').onclick=function(){ ThayDoi('menu')};
+
+        
+        
+    </script>
+</body>
+</html>
